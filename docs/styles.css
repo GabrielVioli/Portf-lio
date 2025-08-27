@@ -222,6 +222,8 @@ footer {
     list-style: none;
     text-align: center;
     padding: 20px;
+    background-color: rgb(160, 160, 224);
+    border-radius: 900px 900px 0px 0px;
 }
 
 footer .contact {
