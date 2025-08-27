@@ -4,14 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Portfólio</title>
-
-    <!-- Favicon -->
+  
     <link rel="shortcut icon" href="icons/portfolio-profissional.ico" type="image/x-icon" />
 
-    <!-- CSS -->
     <link rel="stylesheet" href="styles.css" />
 
-    <!-- Fonts Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -85,22 +82,24 @@
     </main>
 
     <footer>
-        <h2>Entre em contato comigo!</h2>
+        <h2 class = "contact-title">Entre em contato comigo!</h2>
         <ol class="contact">
-            <li style="list-style: none; text-align: center;"><a href="https://wa.me/42988297425"><img id="whatsapp" src="icons/whatsapp.png" alt="Whatsapp"></a></li>
-            <li style="list-style: none; text-align: center;"><a href="link-linkedin"><img id="linkedin" src="icons/linkedin.png" alt="Linkedin"></a></li>
-            <li style="list-style: none; text-align: center;"><a href="link-github"><img id="github" src="icons/github.png" alt="Github"></a></li>
+           <ol class="contact">
+                <li><a href="https://wa.me/42988297425"><img id="whatsapp" src="icons/whatsapp.png" alt="Whatsapp"></a></li>
+                <li><a href="link-linkedin"><img id="linkedin" src="icons/linkedin.png" alt="Linkedin"></a></li>
+                <li><a href="link-github"><img id="github" src="icons/github.png" alt="Github"></a></li>
+           </ol>
         </ol>
 
-        <h2>Me envie uma mensagem!</h2>
+      
         <form id="contact-form">
-            <label>Nome</label><br/>
+            <label id = "name-title">Nome</label><br/>
             <input type="text" id="name-user" name="name-user" placeholder="Seu nome" required /><br /><br />
 
-            <label>Email</label><br />
+            <label id="email-title">Email</label><br />
             <input type="email" id="email-user" name="email-user" placeholder="Seu email" required /><br /><br />
 
-            <label>Mensagem</label><br />
+            <label id="message-title">Mensagem</label><br />
             <textarea id="message" name="message" placeholder="Digite sua mensagem" rows="5" required></textarea><br /><br />
 
             <button type="submit" id="btn-send">Enviar</button>
