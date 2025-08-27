@@ -4,110 +4,109 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Portfólio</title>
-    <link rel="shortcut icon" href="/icons/portfolio-profissional.ico" type="">
-    <link rel="stylesheet" href="/styles.css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="icons/portfolio-profissional.ico" type="image/x-icon" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Fonts Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
-
 <body>
-  <div id="page-card"></div>
-        <header class = "main-header">
-            <h1 id="main-title">Gabriel Vinicius</h1>
-            <p id="subtitle">Desenvolvedor de software</p>
-            <img id = "perfil-photo" src="/docs/images/82556581.jpeg" alt="Foto de perfil" />
-            <h3 id="welcome">Seja bem vindo!</h3>
+    <div id="page-card"></div>
 
-            <nav>
-                <ul id="tec-list" style="list-style: none;">
-                  <li id="vscode" class="nav"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" alt="Visual Studio Code" /></li>
-                  <li id="html5" class="nav"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" alt="HTML5" /></li>
-                  <li id="css" class="nav"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" alt="CSS" /></li>
-                  <li id="git" class="nav"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg" alt="Git" /></li>
-                  <li id="java" class="nav"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-plain.svg" alt="Java" /></li>
-                  <li id="intellij" class="nav"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-plain.svg" alt="IntelliJ IDEA" /></li> 
-                  <li id="cpp" class="nav"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-plain.svg" alt="C++" /></li>
-                  <li id="python" class="nav"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-plain.svg" alt="Python" /></li>
-                  <li id="pandas" class="nav"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas" /></li>
-                  <li id="linux" class="nav"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-plain.svg" alt="Linux" /></li>
-                  <li id="spring" class="nav"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" alt="Spring Framework" /></li>
-                </ul>
+    <header class="main-header">
+        <h1 id="main-title">Gabriel Vinicius</h1>
+        <p id="subtitle">Desenvolvedor de software</p>
+        <img id="perfil-photo" src="images/82556581.jpeg" alt="Foto de perfil" />
+        <h3 id="welcome">Seja bem vindo!</h3>
 
-            </nav>
-        </header>
+        <nav>
+            <ul id="tec-list" style="list-style: none;">
+                <li id="vscode" class="nav"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" alt="Visual Studio Code" /></li>
+                <li id="html5" class="nav"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" alt="HTML5" /></li>
+                <li id="css" class="nav"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" alt="CSS" /></li>
+                <li id="git" class="nav"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg" alt="Git" /></li>
+                <li id="java" class="nav"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-plain.svg" alt="Java" /></li>
+                <li id="intellij" class="nav"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-plain.svg" alt="IntelliJ IDEA" /></li>
+                <li id="cpp" class="nav"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-plain.svg" alt="C++" /></li>
+                <li id="python" class="nav"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-plain.svg" alt="Python" /></li>
+                <li id="pandas" class="nav"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas" /></li>
+                <li id="linux" class="nav"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-plain.svg" alt="Linux" /></li>
+                <li id="spring" class="nav"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" alt="Spring Framework" /></li>
+            </ul>
+        </nav>
+    </header>
 
-        <h1 id = "title-project">Meus projetos</h1>
+    <h1 id="title-project">Meus projetos</h1>
     <main>
-      <section class="projects">
-        <div class="project-card">
-          <div class="overlay">
-            <a href="link-repositorio-1">
-              <img id = "book" src="https://cdn-icons-png.flaticon.com/512/29/29202.png" alt="Projeto Biblioteca Virtual C++" />
-            </a>
-          </div>
-          <div class="project-info">
-            <h3 class="project-title">Biblioteca virtual em C++</h3>
-            <p class="project-subscribe" >Um sistema para cadastro e gerenciamento de livros feito em C++.</p>
-      
-          </div>
-        </div>
+        <section class="projects">
+            <div class="project-card">
+                <div class="overlay">
+                    <a href="link-repositorio-1">
+                        <img id="book" src="https://cdn-icons-png.flaticon.com/512/29/29202.png" alt="Projeto Biblioteca Virtual C++" />
+                    </a>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Biblioteca virtual em C++</h3>
+                    <p class="project-subscribe">Um sistema para cadastro e gerenciamento de livros feito em C++.</p>
+                </div>
+            </div>
 
-      
-        <div class="project-card">
-          <div class="overlay">
-            <a href="link-repositorio-2">
-              <img id = "engrenage" src="https://cdn-icons-png.flaticon.com/512/2972/2972185.png" alt="Projeto Automação de Make com VSCode" />
-            </a>
-          </div>
-          <div class="project-info">
-            <h3 class="project-title" >automação de Make no VScode</h3>
-            <p class="project-subscribe">Script para automatizar compilações e facilitar o workflow no editor VSCode.</p>
-          </div>
-        </div>
-        
-        <div class="project-card">
-          <div class="overlay">
-            <a href="link-repositorio-3">
-              <img id = "vision" src="https://cdn-icons-png.flaticon.com/512/2922/2922506.png" alt="Projeto OpenCV" />
-            </a>
-          </div>
-          <div class="project-info">
-            <h3 class="project-title" >Visão computacional com openCV</h3>
-            <p class="project-subscribe" >Projeto de análise e comparação de imagens usando C++ e OpenCV.</p>
-          </div>
-        </div>
+            <div class="project-card">
+                <div class="overlay">
+                    <a href="link-repositorio-2">
+                        <img id="engrenage" src="https://cdn-icons-png.flaticon.com/512/2972/2972185.png" alt="Projeto Automação de Make com VSCode" />
+                    </a>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Automação de Make no VSCode</h3>
+                    <p class="project-subscribe">Script para automatizar compilações e facilitar o workflow no editor VSCode.</p>
+                </div>
+            </div>
 
-      </section>
+            <div class="project-card">
+                <div class="overlay">
+                    <a href="link-repositorio-3">
+                        <img id="vision" src="https://cdn-icons-png.flaticon.com/512/2922/2922506.png" alt="Projeto OpenCV" />
+                    </a>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Visão computacional com OpenCV</h3>
+                    <p class="project-subscribe">Projeto de análise e comparação de imagens usando C++ e OpenCV.</p>
+                </div>
+            </div>
+        </section>
     </main>
-
 
     <footer>
         <h2>Entre em contato comigo!</h2>
         <ol class="contact">
-      
-            <li style="list-style: none; text-align: center;"><a  href="https://wa.me/42988297425"><img id="whatsapp" src="/docs/icons/whatsapp.png" alt="Whatsapp"></a></li>
-            <li style="list-style: none; text-align: center;"><a href="link-linkedin"><img id="linkedin" src="/docs/icons/linkedin.png" alt="linkedin"></a></li>
-            <li style="list-style: none; text-align: center;"><a href="link-github"><img id="github" src="/docs/icons/github.png" alt="github"></a></li>
+            <li style="list-style: none; text-align: center;"><a href="https://wa.me/42988297425"><img id="whatsapp" src="icons/whatsapp.png" alt="Whatsapp"></a></li>
+            <li style="list-style: none; text-align: center;"><a href="link-linkedin"><img id="linkedin" src="icons/linkedin.png" alt="Linkedin"></a></li>
+            <li style="list-style: none; text-align: center;"><a href="link-github"><img id="github" src="icons/github.png" alt="Github"></a></li>
         </ol>
+
         <h2>Me envie uma mensagem!</h2>
         <form id="contact-form">
-        <label>Nome</label><br/>
-        <input type="text" id="name-user" name="name-user" placeholder="Seu nome" required /><br /><br />
+            <label>Nome</label><br/>
+            <input type="text" id="name-user" name="name-user" placeholder="Seu nome" required /><br /><br />
 
-        <label>Email</label><br />
-        <input type="email" id="email-user" name="email-user" placeholder="Seu email" required /><br /><br />
+            <label>Email</label><br />
+            <input type="email" id="email-user" name="email-user" placeholder="Seu email" required /><br /><br />
 
-        <label>Mensagem</label><br />
-        <textarea id="message" name="message" placeholder="Digite sua mensagem" rows="5" required></textarea><br /><br />
+            <label>Mensagem</label><br />
+            <textarea id="message" name="message" placeholder="Digite sua mensagem" rows="5" required></textarea><br /><br />
 
-        <button type="submit" id="btn-send">Enviar</button>
+            <button type="submit" id="btn-send">Enviar</button>
         </form>
 
         <p>© 2025 Gabriel Vinicius. Todos os direitos reservados.</p>
     </footer>
-
-  </div>
 </body>
 </html>
