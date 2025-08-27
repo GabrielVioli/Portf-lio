@@ -40,8 +40,8 @@
 }
 
 #perfil-photo:hover {
-    transition: 0.3;
-    transform: scale(1.02);
+    transition: 0.10 ease;
+    transform: scale(1.01);
 }
 
 
@@ -64,7 +64,7 @@
     align-items: center;
     justify-content: center;
     margin: 6px;
-    transition: background 0.5s;
+    transition: 0.5s;
     cursor:pointer;
 }
 
