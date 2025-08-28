@@ -12,14 +12,14 @@
 
 /* Tipografia */
 #main-title {
-    font-family: 'poppins';
+    font-family: 'Roboto';
     font-weight: 200;
     font-style: normal;
 }
 
 #subtitle {
     font-family: 'roboto';
-    font-weight: 350;
+    font-weight: 200;
     font-style: normal;
 }
 
@@ -131,6 +131,91 @@
 /* Header */
 .main-header {
     text-align: center;
+    background-color:#a8bcd2;
+    margin: 0 auto 10px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(
+        circle,
+        #7fa2c2 0%,
+        #85a7c5 3%,
+        #8bacc8 6%,
+        #91b1cb 9%,
+        #97b6ce 12%,
+        #9dbbd1 15%,
+        #a3c0d4 18%,
+        #a9c4d7 21%,
+        #afc9da 24%,
+        #b5cedd 27%,
+        #bbd3e0 30%,
+        #c1d7e3 33%,
+        #c7dce6 36%,
+        #cde1e9 39%,
+        #d3e5ec 42%,
+        #d9eaef 45%,
+        #deeef2 50%,
+        #e3f1f4 55%,
+        #e8f4f6 60%,
+        #ecf6f8 65%,
+        #f0f8fa 70%,
+        #f3f9fb 75%,
+        #f6fafc 80%,
+        #f8fbfd 85%,
+        #f9fcfe 88%,
+        #fbfdfe 91%,
+        #fcfdfe 94%,
+        #fdfefe 97%,
+        #fefefe 99%,
+        #fefefe 99.2%,
+        #fefefe 99.3%,
+        #fefefe 99.4%,
+        #fefefe 99.5%,
+        #ffffff 100%
+    );
+}
+
+.main-header:hover {
+        background: radial-gradient(
+            circle,
+            #7fa2c2 6.36%,
+            #85a7c5 9.09%,
+            #8bacc8 11.82%,
+            #91b1cb 14.55%,
+            #97b6ce 17.27%,
+            #9dbbd1 20.00%,
+            #a3c0d4 22.73%,
+            #a9c4d7 25.45%,
+            #afc9da 28.18%,
+            #b5cedd 30.91%,
+            #bbd3e0 33.64%,
+            #c1d7e3 36.36%,
+            #c7dce6 39.09%,
+            #cde1e9 41.82%,
+            #d3e5ec 44.55%,
+            #d9eaef 47.27%,
+            #deeef2 52.73%,
+            #e3f1f4 57.27%,
+            #e8f4f6 61.82%,
+            #ecf6f8 66.36%,
+            #f0f8fa 70.91%,
+            #f3f9fb 75.45%,
+            #f6fafc 80.00%,
+            #f8fbfd 84.55%,
+            #f9fcfe 87.27%,
+            #fbfdfe 90.91%,
+            #fcfdfe 94.55%,
+            #93b5b5 98.18%,
+            #fefefe 100%,
+            #fefefe 100%,
+            #fefefe 100%,
+            #fefefe 100%,
+            #fefefe 100%,
+            #ffffff 100,
+
+    );
+
+    cursor: pointer;
 }
 
 #title-project {
@@ -166,6 +251,7 @@
     display: flex;
     gap: 200px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .project-card {
@@ -175,7 +261,7 @@
     max-width: 250px;
     text-align: center;
     gap: 15px;
-    background-color: #f8f8f8; /* cinza suave */
+    background-color: #f8f8f8; 
     height: 320px;
     padding: 20px;
     border-radius: 20px;
@@ -224,6 +310,7 @@ footer {
     padding: 20px;
     background-color: rgb(160, 160, 224);
     border-radius: 900px 900px 0px 0px;
+    background-image: linear-gradient(#ffffff,#e3e6e9, #dbe1e7, #c8d0d9);
 }
 
 footer .contact {
@@ -278,4 +365,27 @@ footer .contact li {
 
 #btn-send:hover{ cursor: pointer; background-color: #cfc9c6; }
 #btn-send:active{ transform: translateY(1px); }
+
+body {
+    background-color: #fefefe 99.5%
+}
+
+#login {
+    max-width: 60px;
+    max-height: 60px;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    border-radius: 50%;
+    border-style: inset;
+    border-width: 5px;
+    background-color: #d0e8f2; /* azul suave */
+    border-color: #7fa2c2;
+}
+
+#login:hover {
+    background-color: #a3d1e9; 
+    transform: scale(1.03);
+    cursor: pointer;
+}
 
