@@ -409,48 +409,44 @@ body {
     }
 }
 
-@media screen and (max-width: 768px) {
-    .main-header {
-        width: 400px;
-        height: 400px;
-    }
-    .projects {
-        flex-direction: column;
-        gap: 40px;
-        margin-top: 20px;
-    }
-    #title-project {
-        font-size: 1.5rem;
-    }
-    #btn-send, #name-user, #email-user, #message {
-        width: 90%;
-    }
-}
+/* RESPONSIVIDADE */
 
 @media screen and (max-width: 480px) {
     .main-header {
         width: 300px;
-        height: 300px;
+        height: auto;
+        padding: 15px;
+        margin-bottom: 80px; 
+        background: none;
     }
+
     .project-card {
         max-width: 90%;
         height: auto;
     }
+
     #tec-list {
         gap: 10px;
+        flex-wrap: wrap;
     }
+
     #tec-list li {
         width: 40px;
         height: 40px;
+        margin-top: 20px;
     }
+
     #tec-list img {
         max-width: 20px;
         max-height: 20px;
     }
+
     footer {
         margin: 50px auto 0;
         padding: 15px;
     }
 }
+
+
 
 
