@@ -106,12 +106,14 @@
             <li><a href="https://github.com/GabrielVioli" target="_blank"><img id="github" src="icons/github.png" alt="Github"></a></li>
         </ol>
       
-        <form id="contact-form">
+        <form id="contact-form" action="https://formsubmit.co/gabrielgvo16@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://gabrielvioli.github.io/Portf-lio/">
             <label id = "name-title">Nome</label><br/>
-            <input type="text" id="name-user" name="name-user" placeholder="Seu nome" required /><br /><br />
+            <input type="text" id="name-user" name="name" placeholder="Seu nome" required /><br /><br />
 
             <label id="email-title">Email</label><br />
-            <input type="email" id="email-user" name="email-user" placeholder="Seu email" required /><br /><br />
+            <input type="email" id="email-user" name="email" placeholder="Seu email" required /><br /><br />
 
             <label id="message-title">Mensagem</label><br />
             <textarea id="message" name="message" placeholder="Digite sua mensagem" rows="5" required></textarea><br /><br />
@@ -119,7 +121,13 @@
             <button type="submit" id="btn-send">Enviar</button>
         </form>
 
+        <p id="success-msg" style="display:none; color:rgb(84, 161, 84); margin-top:15px; font-weight:bold;">
+            Mensagem enviada com sucesso!
+        </p>
+
         <p>© 2025 Gabriel Vinicius. Todos os direitos reservados.</p>
     </footer>
+    <script src="script.js"></script>
+
 </body>
 </html>
