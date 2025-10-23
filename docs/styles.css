@@ -328,7 +328,6 @@ footer .contact li {
     margin: 0;
 }
 
-/* Form */
 .contact {
     display: flex;
     justify-content: center;
@@ -379,8 +378,113 @@ body {
     border-radius: 50%;
     border-style: inset;
     border-width: 5px;
-    background-color: #d0e8f2; /* azul suave */
+    background-color: #d0e8f2; 
     border-color: #7fa2c2;
+}
+
+
+.theme-switcher-container {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.theme-switcher {
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 24px;
+}
+
+.theme-switcher input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .10s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 20px;
+    left: 3px;
+    bottom: 4px;
+    background-color: white;
+    transition: .3s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #7fa2c2;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+body.dark-mode {
+    background-color: #2b2b2b;
+    color: #f0f0f0;
+    transition: .5s;
+}
+
+body.dark-mode .main-header {
+    background: radial-gradient(circle, #2a3a4b 0%, #1a1a1a 70%);
+    transition: .4s;
+}
+
+body.dark-mode #perfil-photo {
+    border-color: #5a7a9a;
+    transition: .3s;
+}
+
+
+body.dark-mode #tec-list img {
+    filter: invert(90%) sepia(10%) saturate(100%) hue-rotate(180deg) brightness(100%) contrast(90%);
+}
+
+body.dark-mode .project-card {
+    background-color: #3f3f3f;
+    box-shadow: 7px 5px 7px #1a1a1a;
+}
+
+body.dark-mode footer {
+    background-image: linear-gradient(#3f3f3f, #2b2b2b);
+    background-color: #3f3f3f; 
+}
+
+body.dark-mode #name-user,
+body.dark-mode #email-user,
+body.dark-mode #message {
+    background-color: #5a5a5a;
+    color: #f0f0f0;
+    border: 1px solid #777;
+    box-shadow: none;
+    transition: 3s;
+}
+
+body.dark-mode ::placeholder {
+    color: #bbb;
+}
+
+body.dark-mode #btn-send {
+    background-color: #5a5a5a;
+    color: #f0f0f0;
+    box-shadow: none;
+}
+body.dark-mode #btn-send:hover {
+    background-color: #7fa2c2;
 }
 
 #login:hover {
