@@ -1,141 +1,307 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Portfólio</title>
-  
-    <link rel="shortcut icon" href="icons/portfolio-profissional.ico" type="image/x-icon" />
+
+    <link
+      rel="shortcut icon"
+      href="icons/portfolio-profissional.ico"
+      type="image/x-icon"
+    />
 
     <link rel="stylesheet" href="styles.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-    <div id="page-card"></div>
+  <body>
+    <div id="cartao-pagina"></div>
 
-    <header class="main-header">
-        <h1 id="main-title">Gabriel Vinicius</h1>
-        <p id="subtitle">Desenvolvedor de software</p>
-        <a href="index.html"><img id="perfil-photo" src="images/82556581.jpeg" alt="Foto de perfil"/></a>
-        <h3 id="welcome">Seja bem vindo!</h3>
+    <header class="cabecalho-principal">
+      <h1 id="titulo-principal">Gabriel Vinicius</h1>
+      <p id="subtitulo">Desenvolvedor de software</p>
+      <a href="index.html"
+        ><img id="foto-perfil" src="images/82556581.jpeg" alt="Foto de perfil"
+      /></a>
+      <h3 id="saudacao">Seja bem vindo!</h3>
 
-        <div class="theme-switcher-container">
-            <label class="theme-switcher" for="tema-botao">
-                <input type="checkbox" id="tema-botao" />
-                <span class="slider"></span>
-            </label>
-        </div>
+      <div class="alternador-tema-container">
+        <label class="alternador-tema" for="botao-tema">
+          <input type="checkbox" id="botao-tema" />
+          <span class="deslizador"></span>
+        </label>
+      </div>
 
-        <nav>
-            <ul id="tec-list" style="list-style: none;">
-                <li id="vscode" class="nav"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" alt="Visual Studio Code" /></li>
-                <li id="html5" class="nav"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" alt="HTML5" /></li>
-                <li id="css" class="nav"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" alt="CSS" /></li>
-                <li id="git" class="nav"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg" alt="Git" /></li>
-                <li id="java" class="nav"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-plain.svg" alt="Java" /></li>
-                <li id="intellij" class="nav"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-plain.svg" alt="IntelliJ IDEA" /></li>
-                <li id="cpp" class="nav"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-plain.svg" alt="C++" /></li>
-                <li id="python" class="nav"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-plain.svg" alt="Python" /></li>
-                <li id="pandas" class="nav"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas" /></li>
-                <li id="linux" class="nav"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-plain.svg" alt="Linux" /></li>
-                <li id="spring" class="nav"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" alt="Spring Framework" /></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul id="lista-tecnologias" style="list-style: none">
+          <li id="vscode" class="nav">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg"
+              alt="Visual Studio Code"
+            />
+          </li>
+          <li id="html5" class="nav">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg"
+              alt="HTML5"
+            />
+          </li>
+          <li id="css" class="nav">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"
+              alt="CSS"
+            />
+          </li>
+          <li id="git" class="nav">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg"
+              alt="Git"
+            />
+          </li>
+          <li id="java" class="nav">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-plain.svg"
+              alt="Java"
+            />
+          </li>
+          <li id="intellij" class="nav">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-plain.svg"
+              alt="IntelliJ IDEA"
+            />
+          </li>
+          <li id="cpp" class="nav">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-plain.svg"
+              alt="C++"
+            />
+          </li>
+          <li id="python" class="nav">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-plain.svg"
+              alt="Python"
+            />
+          </li>
+          <li id="pandas" class="nav">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg"
+              alt="Pandas"
+            />
+          </li>
+          <li id="linux" class="nav">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-plain.svg"
+              alt="Linux"
+            />
+          </li>
+          <li id="spring" class="nav">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg"
+              alt="Spring Framework"
+            />
+          </li>
+        </ul>
+      </nav>
     </header>
 
-    <h1 id="title-project">Meus projetos</h1>
+    <h1 id="titulo-projetos">Meus projetos</h1>
     <main>
-        <section class="projects">
+      <section class="projetos">
+        <div class="cartao-projeto">
+          <div class="sobreposicao">
+            <a
+              target="_blank"
+              href="https://github.com/GabrielVioli/BookManager"
+            >
+              <img
+                id="livro"
+                src="https://cdn-icons-png.flaticon.com/512/29/29202.png"
+                alt="Projeto Biblioteca Virtual C++"
+              />
+            </a>
+          </div>
+          <div class="info-projeto">
+            <h3 class="titulo-projeto">Biblioteca virtual em C++</h3>
+            <p class="descricao-projeto">
+              Um sistema para cadastro e gerenciamento de livros feito em C++.
+            </p>
+          </div>
+        </div>
 
-            <div class="project-card">
-                <div class="overlay">
-                    <a  target="_blank" href="https://github.com/GabrielVioli/BookManager">
-                        <img id="book" src="https://cdn-icons-png.flaticon.com/512/29/29202.png" alt="Projeto Biblioteca Virtual C++" />
-                    </a>
-                </div>
-                <div class="project-info">
-                    <h3 class="project-title">Biblioteca virtual em C++</h3>
-                    <p class="project-subscribe">Um sistema para cadastro e gerenciamento de livros feito em C++.</p>
-                </div>
-            </div>
+        <div class="cartao-projeto">
+          <div class="sobreposicao">
+            <a
+              target="_blank"
+              href="https://github.com/GabrielVioli/CppBuildMaster"
+            >
+              <img
+                id="engrenagem"
+                src="https://cdn-icons-png.flaticon.com/512/2972/2972185.png"
+                alt="Projeto Automação de Make com VSCode"
+              />
+            </a>
+          </div>
+          <div class="info-projeto">
+            <h3 class="titulo-projeto">Automação de Make no VSCode</h3>
+            <p class="descricao-projeto">
+              Script para automatizar compilações e facilitar o workflow no
+              editor VSCode.
+            </p>
+          </div>
+        </div>
 
-            <div class="project-card">
-                <div class="overlay">
-                    <a target="_blank"  href="https://github.com/GabrielVioli/CppBuildMaster">
-                        <img id="engrenage" src="https://cdn-icons-png.flaticon.com/512/2972/2972185.png" alt="Projeto Automação de Make com VSCode" />
-                    </a>
-                </div>
-                <div class="project-info">
-                    <h3 class="project-title">Automação de Make no VSCode</h3>
-                    <p class="project-subscribe">Script para automatizar compilações e facilitar o workflow no editor VSCode.</p>
-                </div>
-            </div>
+        <div class="cartao-projeto">
+          <div class="sobreposicao">
+            <a target="_blank" href="https://github.com/GabrielVioli/OpenCv-C-">
+              <img
+                id="visao"
+                src="https://cdn-icons-png.flaticon.com/512/2922/2922506.png"
+                alt="Projeto OpenCV"
+              />
+            </a>
+          </div>
+          <div class="info-projeto">
+            <h3 class="titulo-projeto">Visão computacional com OpenCV</h3>
+            <p class="descricao-projeto">
+              Projeto de análise e comparação de imagens usando C++ e OpenCV.
+            </p>
+          </div>
+        </div>
 
-            <div class="project-card">
-                <div class="overlay">
-                    <a target="_blank" href="https://github.com/GabrielVioli/OpenCv-C-">
-                        <img id="vision" src="https://cdn-icons-png.flaticon.com/512/2922/2922506.png" alt="Projeto OpenCV" />
-                    </a>
-                </div>
-                <div class="project-info">
-                    <h3 class="project-title">Visão computacional com OpenCV</h3>
-                    <p class="project-subscribe">Projeto de análise e comparação de imagens usando C++ e OpenCV.</p>
-                </div>
-            </div>
+        <div class="cartao-projeto">
+          <div class="sobreposicao">
+            <a
+              target="_blank"
+              href="https://github.com/GabrielVioli/ClientTasks"
+            >
+              <img
+                id="entrar"
+                src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png"
+                alt="Projeto Login Spring Boot"
+              />
+            </a>
+          </div>
+          <div class="info-projeto">
+            <h3 class="titulo-projeto">Tela de Login com Spring Boot</h3>
+            <p class="descricao-projeto">
+              Projeto de autenticação de usuários utilizando Spring Boot, MySQL,
+              JS, CSS e HTML, integrado via ngrok para acesso remoto.
+            </p>
+          </div>
+        </div>
 
+        </div>
 
-            <div class="project-card">
-                <div class="overlay">
-                    <a target="_blank" href="https://github.com/GabrielVioli/ClientTasks">
-                        <img id="login" src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" alt="Projeto Login Spring Boot" />
-                    </a>
-                </div>
-                <div class="project-info">
-                    <h3 class="project-title">Tela de Login com Spring Boot</h3>
-                    <p class="project-subscribe">
-                        Projeto de autenticação de usuários utilizando Spring Boot, MySQL, JS, CSS e HTML, integrado via ngrok para acesso remoto.
-                    </p>
-                </div>
-            </div>
-</section>
-
+        <div class="cartao-projeto">
+          <div class="sobreposicao">
+            <a
+              target="_blank"
+              href="https://github.com/GabrielVioli/php-oop-mvc-login"
+            >
+              <img
+                id="php-login"
+                src="https://cdn-icons-png.flaticon.com/512/1040/1040918.png"
+                alt="Projeto PHP POO Login"
+              />
+            </a>
+          </div>
+          <div class="info-projeto">
+            <h3 class="titulo-projeto">Registro de Usuário (PHP POO)</h3>
+            <p class="descricao-projeto">
+              Um projeto de estudo focado em construir uma aplicação de registro
+              de usuário em PHP, seguindo uma arquitetura moderna orientada a
+              objetos (POO).
+            </p>
+          </div>
+        </div>
+        </section>
     </main>
+      </section>
     </main>
 
     <footer>
-        <h2 class="contact-title">Entre em contato comigo!</h2>
-        <ol class="contact">
-            <li><a href="https://wa.me/5542988667187" target="_blank"><img id="whatsapp" src="icons/whatsapp.png" alt="Whatsapp"></a></li>
-            <li><a href="https://br.linkedin.com/in/gabrielvioli" target="_blank"><img id="linkedin" src="icons/linkedin.png" alt="Linkedin"></a></li>
-            <li><a href="https://github.com/GabrielVioli" target="_blank"><img id="github" src="icons/github.png" alt="Github"></a></li>
-        </ol>
-      
-         <form id="contact-form" action="https://formsubmit.co/9e491e68ab40e7b9faac14e46dc0c571" method="POST">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="https://gabrielvioli.github.io/Portf-lio/">
-            <label id = "name-title">Nome</label><br/>
-            <input type="text" id="name-user" name="name" placeholder="Seu nome" required /><br /><br />
+      <h2 class="titulo-contato">Entre em contato comigo!</h2>
+      <ol class="contatos">
+        <li>
+          <a href="https://wa.me/5542988667187" target="_blank"
+            ><img id="whatsapp" src="icons/whatsapp.png" alt="Whatsapp"
+          /></a>
+        </li>
+        <li>
+          <a href="https://br.linkedin.com/in/gabrielvioli" target="_blank"
+            ><img id="linkedin" src="icons/linkedin.png" alt="Linkedin"
+          /></a>
+        </li>
+        <li>
+          <a href="https://github.com/GabrielVioli" target="_blank"
+            ><img id="github" src="icons/github.png" alt="Github"
+          /></a>
+        </li>
+      </ol>
 
-            <label id="email-title">Email</label><br />
-            <input type="email" id="email-user" name="email" placeholder="Seu email" required /><br /><br />
+      <form
+        id="formulario"
+        action="https://formsubmit.co/9e491e68ab40e7b9faac14e46dc0c571"
+        method="POST"
+      >
+        <input type="hidden" name="_captcha" value="false" />
+        <input
+          type="hidden"
+          name="_next"
+          value="https://gabrielvioli.github.io/Portf-lio/"
+        />
+        <label id="titulo-nome">Nome</label><br />
+        <input
+          type="text"
+          id="nome-usuario"
+          name="name"
+          placeholder="Seu nome"
+          required
+        /><br /><br />
 
-            <label id="message-title">Mensagem</label><br />
-            <textarea id="message" name="message" placeholder="Digite sua mensagem" rows="5" required></textarea><br /><br />
+        <label id="titulo-email">Email</label><br />
+        <input
+          type="email"
+          id="email-usuario"
+          name="email"
+          placeholder="Seu email"
+          required
+        /><br /><br />
 
-            <button type="submit" id="btn-send">Enviar</button>
-        </form>
+        <label id="titulo-mensagem">Mensagem</label><br />
+        <textarea
+          id="mensagem"
+          name="message"
+          placeholder="Digite sua mensagem"
+          rows="5"
+          required
+        ></textarea
+        ><br /><br />
 
-        <p id="success-msg" style="display:none; color:rgb(84, 161, 84); margin-top:15px; font-weight:bold;">
-            Mensagem enviada com sucesso!
-        </p>
+        <button type="submit" id="botao-enviar">Enviar</button>
+      </form>
 
-        <p>© 2025 Gabriel Vinicius. Todos os direitos reservados.</p>
+      <p
+        id="mensagemSucesso"
+        style="
+          display: none;
+          color: rgb(84, 161, 84);
+          margin-top: 15px;
+          font-weight: bold;
+        "
+      >
+        Mensagem enviada com sucesso!
+      </p>
+
+      <p>© 2025 Gabriel Vinicius. Todos os direitos reservados.</p>
     </footer>
     <script src="script.js"></script>
-
-</body>
+  </body>
 </html>
