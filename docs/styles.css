@@ -1,600 +1,662 @@
 @charset "utf-8";
 
-/*  icones de tecnologias  */
-#tec-list img {
-    max-width: 30px;
-    max-height: 30px;
-    width: auto;
-    height: auto;
-    filter: invert(38%) sepia(87%) saturate(50%) hue-rotate(180deg) brightness(30%) contrast(90%);
-    transition: 0.5s ease;
+#lista-tecnologias img {
+  max-width: 30px;
+  max-height: 30px;
+  width: auto;
+  height: auto;
+  filter: invert(38%) sepia(87%) saturate(50%) hue-rotate(180deg)
+    brightness(30%) contrast(90%);
+  transition: 0.5s ease;
 }
 
-/* Tipografia */
-#main-title {
-    font-family: 'Roboto';
-    font-weight: 200;
-    font-style: normal;
+#titulo-principal {
+  font-family: "Roboto";
+  font-weight: 200;
+  font-style: normal;
 }
 
-#subtitle {
-    font-family: 'roboto';
-    font-weight: 200;
-    font-style: normal;
+#subtitulo {
+  font-family: "roboto";
+  font-weight: 200;
+  font-style: normal;
 }
 
-#welcome {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 200;
-    text-align: center;     
-    white-space: nowrap;     
-    overflow: hidden;      
-    width: 0;             
-    margin: 50px auto;    
-    animation: typing 3s steps(15, end) forwards, blink 0.75s step-end infinite;
+#saudacao {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  margin: 50px auto;
+  animation: typing 3s steps(15, end) forwards, blink 0.75s step-end infinite;
 }
 
 @keyframes typing {
-    from { width: 0; }
-    to { width: 15ch; }
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 15ch;
+  }
 }
 
-
-
-.contact-title {
-    font-family: 'poppins';
-    font-weight: 200;
-    font-style: normal;
+.titulo-contato {
+  font-family: "poppins";
+  font-weight: 200;
+  font-style: normal;
 }
 
 .send-me {
-    font-family: 'roboto';
-    font-weight: 350;
-    font-style: normal;
+  font-family: "roboto";
+  font-weight: 350;
+  font-style: normal;
 }
 
-#name-title {
-    font-family: 'poppins';
-    font-weight: 300;
-    font-style: bold;
+#titulo-nome {
+  font-family: "poppins";
+  font-weight: 300;
+  font-style: bold;
 }
 
-#email-title {
-    font-family: 'poppins';
-    font-weight: 300;
-    font-style: bold;
+#titulo-email {
+  font-family: "poppins";
+  font-weight: 300;
+  font-style: bold;
 }
 
-#message-title {
-    font-family: 'poppins';
-    font-weight: 300;
-    font-style: bold;
+#titulo-mensagem {
+  font-family: "poppins";
+  font-weight: 300;
+  font-style: bold;
 }
 
-/* Foto de perfil */
-#perfil-photo {
-    max-width: 100px;
-    max-height: 100px;
-    width: auto;
-    height: auto;
-    border-radius: 50%;
-    border-style: solid;
-    border-color: rgb(176, 176, 230);
-    cursor: pointer;
-    transition: 0.5s ease;
+#foto-perfil {
+  max-width: 100px;
+  max-height: 100px;
+  width: auto;
+  height: auto;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: rgb(176, 176, 230);
+  cursor: pointer;
+  transition: 0.5s ease;
 }
 
-#perfil-photo:hover {
-    transform: translateY(-5px);
+#foto-perfil:hover {
+  transform: translateY(-5px);
 }
 
-/* Lista de tecnologias */
-#tec-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    flex-wrap: wrap;
+#lista-tecnologias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  flex-wrap: wrap;
 }
 
-#tec-list li {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 6px;
-    transition: 0.5s;
-    cursor: pointer;
+#lista-tecnologias li {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 6px;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
-#tec-list li:hover img {
-    filter: none;
-    transform: translateY(-2px);
+#lista-tecnologias li:hover img {
+  filter: none;
+  transform: translateY(-2px);
 }
 /* Hover das tecnologias */
-#vscode:hover {background: #a3c6d3; }
-#html5:hover {background: #e4c6b3; }
-#css:hover { background: #b0cde0; }
-#git:hover { background: #e3c4b7; }
-#java:hover { background: #ecd9b3; }
-#intellij:hover { background: #d6aad8; }
-#cpp:hover { background: #a8c8e3; }
-#python:hover { background: #bcd6e7; }
-#pandas:hover { background: #c7bbe0; }
-#linux:hover { background: #ede2b0; }
-#spring:hover { background: #c8e8b4; }
+#vscode:hover {
+  background: #a3c6d3;
+}
+#html5:hover {
+  background: #e4c6b3;
+}
+#css:hover {
+  background: #b0cde0;
+}
+#git:hover {
+  background: #e3c4b7;
+}
+#java:hover {
+  background: #ecd9b3;
+}
+#intellij:hover {
+  background: #d6aad8;
+}
+#cpp:hover {
+  background: #a8c8e3;
+}
+#python:hover {
+  background: #bcd6e7;
+}
+#pandas:hover {
+  background: #c7bbe0;
+}
+#linux:hover {
+  background: #ede2b0;
+}
+#spring:hover {
+  background: #c8e8b4;
+}
 
 /* Header */
-.main-header {
-    text-align: center;
-    background-color:#a8bcd2;
-    margin: 0 auto 10px;
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    background: radial-gradient(
-        circle,
-        #7fa2c2 0%,
-        #85a7c5 3%,
-        #8bacc8 6%,
-        #91b1cb 9%,
-        #97b6ce 12%,
-        #9dbbd1 15%,
-        #a3c0d4 18%,
-        #a9c4d7 21%,
-        #afc9da 24%,
-        #b5cedd 27%,
-        #bbd3e0 30%,
-        #c1d7e3 33%,
-        #c7dce6 36%,
-        #cde1e9 39%,
-        #d3e5ec 42%,
-        #d9eaef 45%,
-        #deeef2 50%,
-        #e3f1f4 55%,
-        #e8f4f6 60%,
-        #ecf6f8 65%,
-        #f0f8fa 70%,
-        #f3f9fb 75%,
-        #f6fafc 80%,
-        #f8fbfd 85%,
-        #f9fcfe 88%,
-        #fbfdfe 91%,
-        #fcfdfe 94%,
-        #fdfefe 97%,
-        #fefefe 99%,
-        #fefefe 99.2%,
-        #fefefe 99.3%,
-        #fefefe 99.4%,
-        #fefefe 99.5%,
-        #ffffff 100%
-    );
+.cabecalho-principal {
+  text-align: center;
+  background-color: #a8bcd2;
+  margin: 0 auto 10px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    #7fa2c2 0%,
+    #85a7c5 3%,
+    #8bacc8 6%,
+    #91b1cb 9%,
+    #97b6ce 12%,
+    #9dbbd1 15%,
+    #a3c0d4 18%,
+    #a9c4d7 21%,
+    #afc9da 24%,
+    #b5cedd 27%,
+    #bbd3e0 30%,
+    #c1d7e3 33%,
+    #c7dce6 36%,
+    #cde1e9 39%,
+    #d3e5ec 42%,
+    #d9eaef 45%,
+    #deeef2 50%,
+    #e3f1f4 55%,
+    #e8f4f6 60%,
+    #ecf6f8 65%,
+    #f0f8fa 70%,
+    #f3f9fb 75%,
+    #f6fafc 80%,
+    #f8fbfd 85%,
+    #f9fcfe 88%,
+    #fbfdfe 91%,
+    #fcfdfe 94%,
+    #fdfefe 97%,
+    #fefefe 99%,
+    #fefefe 99.2%,
+    #fefefe 99.3%,
+    #fefefe 99.4%,
+    #fefefe 99.5%,
+    #ffffff 100%
+  );
 }
 
-.main-header:hover {
-        background: radial-gradient(
-            circle,
-            #7fa2c2 6.36%,
-            #85a7c5 9.09%,
-            #8bacc8 11.82%,
-            #91b1cb 14.55%,
-            #97b6ce 17.27%,
-            #9dbbd1 20.00%,
-            #a3c0d4 22.73%,
-            #a9c4d7 25.45%,
-            #afc9da 28.18%,
-            #b5cedd 30.91%,
-            #bbd3e0 33.64%,
-            #c1d7e3 36.36%,
-            #c7dce6 39.09%,
-            #cde1e9 41.82%,
-            #d3e5ec 44.55%,
-            #d9eaef 47.27%,
-            #deeef2 52.73%,
-            #e3f1f4 57.27%,
-            #e8f4f6 61.82%,
-            #ecf6f8 66.36%,
-            #f0f8fa 70.91%,
-            #f3f9fb 75.45%,
-            #f6fafc 80.00%,
-            #f8fbfd 84.55%,
-            #f9fcfe 87.27%,
-            #fbfdfe 90.91%,
-            #fcfdfe 94.55%,
-            #93b5b5 98.18%,
-            #fefefe 100%,
-            #fefefe 100%,
-            #fefefe 100%,
-            #fefefe 100%,
-            #fefefe 100%,
-            #ffffff 100,
+.cabecalho-principal:hover {
+  background: radial-gradient(
+    circle,
+    #7fa2c2 6.36%,
+    #85a7c5 9.09%,
+    #8bacc8 11.82%,
+    #91b1cb 14.55%,
+    #97b6ce 17.27%,
+    #9dbbd1 20%,
+    #a3c0d4 22.73%,
+    #a9c4d7 25.45%,
+    #afc9da 28.18%,
+    #b5cedd 30.91%,
+    #bbd3e0 33.64%,
+    #c1d7e3 36.36%,
+    #c7dce6 39.09%,
+    #cde1e9 41.82%,
+    #d3e5ec 44.55%,
+    #d9eaef 47.27%,
+    #deeef2 52.73%,
+    #e3f1f4 57.27%,
+    #e8f4f6 61.82%,
+    #ecf6f8 66.36%,
+    #f0f8fa 70.91%,
+    #f3f9fb 75.45%,
+    #f6fafc 80%,
+    #f8fbfd 84.55%,
+    #f9fcfe 87.27%,
+    #fbfdfe 90.91%,
+    #fcfdfe 94.55%,
+    #93b5b5 98.18%,
+    #fefefe 100%,
+    #fefefe 100%,
+    #fefefe 100%,
+    #fefefe 100%,
+    #fefefe 100%,
+    #ffffff 100
+  );
 
-    );
-
-    cursor: pointer;
+  cursor: pointer;
 }
 
-#title-project {
-    text-align: center;
-    font-family: 'poppins';
-    font-weight: 250;
-    font-style: normal;
+#titulo-projetos {
+  text-align: center;
+  font-family: "poppins";
+  font-weight: 250;
+  font-style: normal;
 }
 
-/* Projetos */
-#vision, #engrenage, #book {
-    max-width: 60px;
-    max-height: 60px;
-    width: auto;
-    height: auto;
-    padding: 20px;
-    border-radius: 50%;
-    border-style: inset;
-    border-width: 5px;
+#visao,
+#engrenagem,
+#livro {
+  max-width: 60px;
+  max-height: 60px;
+  width: auto;
+  height: auto;
+  padding: 20px;
+  border-radius: 50%;
+  border-style: inset;
+  border-width: 5px;
 }
 
-#vision { background-color: #f0c4b8; border-color: #d59a7c; }
-#engrenage { background-color: #d3dce3; border-color: #a8bcd2; }
-#book { background-color: #f0e5b8; border-color: #d4c97c; }
-
-#vision:hover { background-color:#e6b09c; transform: scale(1.03); }
-#engrenage:hover { background-color: #bfcad8; transform: scale(1.03); cursor: pointer; }
-#book:hover { background-color:#e6dd9c; transform: scale(1.03); cursor: pointer; }
-
-.projects {
-    margin: auto;
-    margin-top: 30px;
-    display: flex;
-    gap: 200px;
-    justify-content: center;
-    flex-wrap: wrap;
+#visao {
+  background-color: #f0c4b8;
+  border-color: #d59a7c;
+}
+#engrenagem {
+  background-color: #d3dce3;
+  border-color: #a8bcd2;
+}
+#livro {
+  background-color: #f0e5b8;
+  border-color: #d4c97c;
 }
 
-.project-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 250px;
-    text-align: center;
-    gap: 15px;
-    background-color: #f8f8f8; 
-    height: 320px;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 7px 5px 7px #767472;
-    transition: 0.7s ease, box-shadow 0.3s ease;
-    font-weight: 300;
-    font-style: normal;
+#visao:hover {
+  background-color: #e6b09c;
+  transform: scale(1.03);
+}
+#engrenagem:hover {
+  background-color: #bfcad8;
+  transform: scale(1.03);
+  cursor: pointer;
+}
+#livro:hover {
+  background-color: #e6dd9c;
+  transform: scale(1.03);
+  cursor: pointer;
 }
 
-.project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 5px 3px 7px #767472;
-    cursor: pointer;
+.projetos {
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  gap: 200px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.project-title {
-    font-family: 'poppins';
-    font-weight: 350;
+.cartao-projeto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 250px;
+  text-align: center;
+  gap: 15px;
+  background-color: #f8f8f8;
+  height: 320px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 7px 5px 7px #767472;
+  transition: 0.7s ease, box-shadow 0.3s ease;
+  font-weight: 300;
+  font-style: normal;
 }
 
-.project-subscribe {
-    font-family: 'roboto';
-    font-weight: 250;
-    font-style: bold;
+.cartao-projeto:hover {
+  transform: translateY(-10px);
+  box-shadow: 5px 3px 7px #767472;
+  cursor: pointer;
+}
+
+.titulo-projeto {
+  font-family: "poppins";
+  font-weight: 350;
+}
+
+.descricao-projeto {
+  font-family: "roboto";
+  font-weight: 250;
+  font-style: bold;
 }
 
 /* Contatos */
-#whatsapp, #linkedin, #github {
-    max-width: 30px;
-    max-height: 30px;
-    width: auto;
-    height: auto;
-    transition: 0.7s ease;
+#whatsapp,
+#linkedin,
+#github {
+  max-width: 30px;
+  max-height: 30px;
+  width: auto;
+  height: auto;
+  transition: 0.7s ease;
 }
 
-#whatsapp:hover, #linkedin:hover, #github:hover {
-    transform: translateY(-5px);
+#whatsapp:hover,
+#linkedin:hover,
+#github:hover {
+  transform: translateY(-5px);
 }
 
 footer {
-    display: flex;
-    flex-direction: column;
-    margin: 90px auto 0;
-    list-style: none;
-    text-align: center;
-    padding: 20px;
-    background-color: rgb(160, 160, 224);
-    border-radius: 900px 900px 0px 0px;
-    background-image: linear-gradient(#ffffff,#e3e6e9, #dbe1e7, #c8d0d9);
+  display: flex;
+  flex-direction: column;
+  margin: 90px auto 0;
+  list-style: none;
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(160, 160, 224);
+  border-radius: 900px 900px 0px 0px;
+  background-image: linear-gradient(#ffffff, #e3e6e9, #dbe1e7, #c8d0d9);
 }
 
-footer .contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding: 0;
-    margin: 20px 0;
-    list-style: none;
-    text-align: center;
+footer .contatos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 0;
+  margin: 20px 0;
+  list-style: none;
+  text-align: center;
 }
 
-footer .contact li {
-    margin: 0;
+footer .contatos li {
+  margin: 0;
 }
 
-.contact {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    text-align: center;
-    align-items: baseline;
+.contatos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  align-items: baseline;
 }
 
 ::placeholder {
-    text-align: center;
+  text-align: center;
 }
 
-#message{
-    border-radius: 10px;
-    width: 420px;
-    box-shadow: 2px 2px 2px rgb(186, 184, 198);
+#mensagem {
+  border-radius: 10px;
+  width: 420px;
+  box-shadow: 2px 2px 2px rgb(186, 184, 198);
 }
 
-#name-user, #email-user {
-    border-radius: 10px;
-    width: 420px;
-    height: 30px;
-    box-shadow: 2px 2px 2px rgb(186, 184, 198);
+#nome-usuario,
+#email-usuario {
+  border-radius: 10px;
+  width: 420px;
+  height: 30px;
+  box-shadow: 2px 2px 2px rgb(186, 184, 198);
 }
 
-#btn-send{
-    padding: 10px;
-    height: 40px;
-    width: 200px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px rgb(186, 184, 198);
-    transition: 0.2 ease;
+#botao-enviar {
+  padding: 10px;
+  height: 40px;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px rgb(186, 184, 198);
+  transition: 0.2 ease;
 }
 
-#btn-send:hover{ cursor: pointer; background-color: #cfc9c6; }
-#btn-send:active{ transform: translateY(1px); }
+#botao-enviar:hover {
+  cursor: pointer;
+  background-color: #cfc9c6;
+}
+#botao-enviar:active {
+  transform: translateY(1px);
+}
 
 body {
-    background-color: #fefefe 99.5%
+  background-color: #fefefe 99.5%;
 }
 
-#login {
-    max-width: 60px;
-    max-height: 60px;
-    width: auto;
-    height: auto;
-    padding: 20px;
-    border-radius: 50%;
-    border-style: inset;
-    border-width: 5px;
-    background-color: #d0e8f2; 
-    border-color: #7fa2c2;
+#entrar {
+  max-width: 60px;
+  max-height: 60px;
+  width: auto;
+  height: auto;
+  padding: 20px;
+  border-radius: 50%;
+  border-style: inset;
+  border-width: 5px;
+  background-color: #d0e8f2;
+  border-color: #7fa2c2;
 }
 
-
-.theme-switcher-container {
-    text-align: center;
-    margin: 25px 0;
+.alternador-tema-container {
+  text-align: center;
+  margin: 25px 0;
 }
 
-.theme-switcher {
-    position: relative;
-    display: inline-block;
-    width: 55px;
-    height: 24px;
+.alternador-tema {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 24px;
 }
 
-.theme-switcher input {
-    opacity: 0;
-    width: 0;
-    height: 0;
+.alternador-tema input {
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    transition: .10s;
-    border-radius: 34px;
+.deslizador {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.1s;
+  border-radius: 34px;
 }
 
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 18px;
-    width: 20px;
-    left: 3px;
-    bottom: 4px;
-    background-color: white;
-    transition: .3s;
-    border-radius: 50%;
+.deslizador:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 20px;
+  left: 3px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.3s;
+  border-radius: 50%;
 }
 
-input:checked + .slider {
-    background-color: #7fa2c2;
+.alternador-tema input:checked + .deslizador {
+  background-color: #7fa2c2;
 }
 
-input:checked + .slider:before {
-    transform: translateX(26px);
+.alternador-tema input:checked + .deslizador:before {
+  transform: translateX(26px);
 }
 
 body.dark-mode {
-    background-color: #2b2b2b;
-    color: #f0f0f0;
-    transition: .5s;
+  background-color: #2b2b2b;
+  color: #f0f0f0;
+  transition: 0.5s;
 }
 
-body.dark-mode .main-header {
-    background: radial-gradient(circle, #2a3a4b 0%, #1a1a1a 70%);
-    transition: .4s;
+body.dark-mode .cabecalho-principal {
+  background: radial-gradient(circle, #2a3a4b 0%, #1a1a1a 70%);
+  transition: 0.4s;
 }
 
-body.dark-mode #perfil-photo {
-    border-color: #5a7a9a;
-    transition: .3s;
+body.dark-mode #foto-perfil {
+  border-color: #5a7a9a;
+  transition: 0.3s;
 }
 
-
-body.dark-mode #tec-list img {
-    filter: invert(90%) sepia(10%) saturate(100%) hue-rotate(180deg) brightness(100%) contrast(90%);
+body.dark-mode #lista-tecnologias img {
+  filter: invert(90%) sepia(10%) saturate(100%) hue-rotate(180deg)
+    brightness(100%) contrast(90%);
 }
 
-body.dark-mode .project-card {
-    background-color: #3f3f3f;
-    box-shadow: 7px 5px 7px #1a1a1a;
+body.dark-mode .cartao-projeto {
+  background-color: #3f3f3f;
+  box-shadow: 7px 5px 7px #1a1a1a;
 }
 
 body.dark-mode footer {
-    background-image: linear-gradient(#3f3f3f, #2b2b2b);
-    background-color: #3f3f3f; 
+  background-image: linear-gradient(#3f3f3f, #2b2b2b);
+  background-color: #3f3f3f;
 }
 
-body.dark-mode #name-user,
-body.dark-mode #email-user,
-body.dark-mode #message {
-    background-color: #5a5a5a;
-    color: #f0f0f0;
-    border: 1px solid #777;
-    box-shadow: none;
-    transition: 3s;
+body.dark-mode #nome-usuario,
+body.dark-mode #email-usuario,
+body.dark-mode #mensagem {
+  background-color: #5a5a5a;
+  color: #f0f0f0;
+  border: 1px solid #777;
+  box-shadow: none;
+  transition: 3s;
 }
 
 body.dark-mode ::placeholder {
-    color: #bbb;
+  color: #bbb;
 }
 
-body.dark-mode #btn-send {
-    background-color: #5a5a5a;
-    color: #f0f0f0;
-    box-shadow: none;
+body.dark-mode #botao-enviar {
+  background-color: #5a5a5a;
+  color: #f0f0f0;
+  box-shadow: none;
 }
-body.dark-mode #btn-send:hover {
-    background-color: #7fa2c2;
-}
-
-#login:hover {
-    background-color: #a3d1e9; 
-    transform: scale(1.03);
-    cursor: pointer;
+body.dark-mode #botao-enviar:hover {
+  background-color: #7fa2c2;
 }
 
-/* RESPONSIVIDADE */
+#entrar:hover {
+  background-color: #a3d1e9;
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+
+#php-login {
+  max-width: 60px;
+  max-height: 60px;
+  width: auto;
+  height: auto;
+  padding: 20px;
+  border-radius: 50%;
+  border-style: inset;
+  border-width: 5px;
+  background-color: #d8cde8;
+  border-color: #9c89b8;
+}
+
 @media screen and (max-width: 1024px) {
-    .projects {
-        gap: 100px;
-    }
-    .project-card {
-        max-width: 220px;
-        height: 300px;
-        padding: 15px;
-    }
-    #tec-list li {
-        width: 45px;
-        height: 45px;
-    }
-    #tec-list img {
-        max-width: 25px;
-        max-height: 25px;
-    }
+  .projetos {
+    gap: 100px;
+  }
+  .cartao-projeto {
+    max-width: 220px;
+    height: 300px;
+    padding: 15px;
+  }
+  #lista-tecnologias li {
+    width: 45px;
+    height: 45px;
+  }
+  #lista-tecnologias img {
+    max-width: 25px;
+    max-height: 25px;
+  }
 
-    form {
-        width: 100%;
-    }
+  form {
+    width: 100%;
+  }
 }
 
 /* RESPONSIVIDADE */
 
 @media screen and (max-width: 768px) {
-    .main-header {
-        width: 400px;
-        height: 400px;
-        margin-bottom: 60px;
-    }
+  .cabecalho-principal {
+    width: 400px;
+    height: 400px;
+    margin-bottom: 60px;
+  }
 
-    .projects {
-        flex-direction: column;
-        gap: 50px;
-        margin-top: 20px;
-    }
+  .projetos {
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 20px;
+  }
 
-    #title-project {
-        font-size: 1.5rem;
-    }
+  #titulo-projetos {
+    font-size: 1.5rem;
+  }
 
-    #btn-send, #name-user, #email-user, #message {
-        width: 90%;
-    }
+  #botao-enviar,
+  #nome-usuario,
+  #email-usuario,
+  #mensagem {
+    width: 90%;
+  }
 
-    #tec-list {
-        gap: 15px;
-    }
+  #lista-tecnologias {
+    gap: 15px;
+  }
 
-    #tec-list li {
-        width: 40px;
-        height: 40px;
-    }
+  #lista-tecnologias li {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 @media screen and (max-width: 480px) {
-    .main-header {
-        width: 300px;
-        height: auto;
-        padding: 10px;
-        margin-bottom: 80px;
-        background: none;
-    }
+  .cabecalho-principal {
+    width: 300px;
+    height: auto;
+    padding: 10px;
+    margin-bottom: 80px;
+    background: none;
+  }
 
-    .projects {
-        gap: 30px;
-    }
+  .projetos {
+    gap: 30px;
+  }
 
-    .project-card {
-        max-width: 90%;
-        height: auto;
-    }
+  .cartao-projeto {
+    max-width: 90%;
+    height: auto;
+  }
 
-    #tec-list {
-        gap: 10px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+  #lista-tecnologias {
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-    #tec-list li {
-        width: 35px;
-        height: 35px;
-        margin-top: 15px;
-    }
+  #lista-tecnologias li {
+    width: 35px;
+    height: 35px;
+    margin-top: 15px;
+  }
 
-    #tec-list img {
-        max-width: 18px;
-        max-height: 18px;
-    }
+  #lista-tecnologias img {
+    max-width: 18px;
+    max-height: 18px;
+  }
 
-    footer {
-        margin: 50px auto 0;
-        padding: 15px;
-    }
+  footer {
+    margin: 50px auto 0;
+    padding: 15px;
+  }
 
-    form {
-        width: 95%;
-    }
+  form {
+    width: 95%;
+  }
 }
-
-
-
-
