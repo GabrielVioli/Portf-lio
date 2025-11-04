@@ -1,30 +1,34 @@
-const form = document.getElementById("contact-form");
-const msg = document.getElementById("success-msg");
 
-form.addEventListener("submit", function() {
-    msg.style.display="block";
-});
-
-const botaoTema = document.getElementById("tema-botao");
+const formulario = document.getElementById("formulario");
+const mensagemSucesso = document.getElementById("mensagemSucesso");
+const botaoTema = document.getElementById("botao-tema");
 const corpo = document.body;
 
-/**
- * @param {string} tema 
- */
-function definirTema(tema) {
-    corpo.classList.toggle("dark-mode", tema === "dark");
-    botaoTema.checked = (tema === "dark");
-    localStorage.setItem("theme", tema);
-}
-
-botaoTema.addEventListener("click", () => {
-    const novoTema = botaoTema.checked ? "dark" : "light";
-    definirTema(novoTema);
+formulario.addEventListener("submit", () => {
+  mensagemSucesso.style.display = "block";
 });
 
-const temaSalvo = localStorage.getItem("theme");
-const prefereEscuro = window.matchMedia("(prefers-color-scheme: dark)").matches;
+function aplicarTema(tema) {
+  
+  if (tema === "dark") {
+    corpo.classList.add("dark-mode");
+    botaoTema.checked = true;
 
-const temaInicial = temaSalvo || (prefereEscuro ? "dark" : "light");
+  } else {
+    corpo.classList.remove("dark-mode");
+    botaoTema.checked = false;
+  }
 
-definirTema(temaInicial);
+  localStorage.setItem("theme", tema);
+}
+
+
+botaoTema.addEventListener("change", () => {
+  if (botaoTema.checked) {
+    aplicarTema("dark");
+  } else {
+    aplicarTema("light");
+  }
+});
+
+carregarTemaInicial();
