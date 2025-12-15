@@ -1,309 +1,317 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portfólio</title>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Vinicius | Backend Developer</title>
+    <link rel="shortcut icon" href="icons/portfolio-profissional.ico" type="image/x-icon">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        primary: '#6366f1', 
+                        secondary: '#4f46e5',
+                        dark: '#0f172a',
+                        light: '#f8fafc'
+                    },
+                    animation: {
+                        'blob': 'blob 10s infinite',
+                    },
+                    keyframes: {
+                        blob: {
+                            '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                            '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+                            '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+                            '100%': { transform: 'translate(0px, 0px) scale(1)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
 
-    <link
-      rel="shortcut icon"
-      href="icons/portfolio-profissional.ico"
-      type="image/x-icon"
-    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+    <style>
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #6366f1; border-radius: 4px; }
+        
+        .glass { background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border-bottom: 1px solid rgba(0,0,0,0.05); }
+        .dark .glass { background: rgba(15, 23, 42, 0.85); border-bottom: 1px solid rgba(255,255,255,0.05); }
+        
+        .cursor-blink { border-right: 3px solid #6366f1; animation: blink 0.75s step-end infinite; }
+        @keyframes blink { 50% { border-color: transparent; } }
 
-  <body>
-    <div id="cartao-pagina"></div>
+        .gpu-accelerated {
+            transform: translate3d(0,0,0);
+            will-change: transform;
+        }
+    </style>
+</head>
+<body class="bg-light text-slate-800 dark:bg-dark dark:text-slate-100 transition-colors duration-300 font-sans antialiased overflow-x-hidden relative">
 
-    <header class="cabecalho-principal">
-      <h1 id="titulo-principal">Gabriel Vinicius</h1>
-      <p id="subtitulo">Desenvolvedor de software</p>
-      <a href="index.html"
-        ><img id="foto-perfil" src="images/82556581.jpeg" alt="Foto de perfil"
-      /></a>
-      <h3 id="saudacao">Seja bem vindo!</h3>
+    <div class="fixed inset-0 w-full h-full pointer-events-none z-0 overflow-hidden opacity-20 dark:opacity-10 gpu-accelerated">
+        <div class="absolute top-0 left-1/4 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-2xl animate-blob"></div>
+        <div class="absolute top-0 right-1/4 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-2xl animate-blob animation-delay-2000"></div>
+        <div class="absolute -bottom-8 left-20 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-2xl animate-blob animation-delay-4000"></div>
+    </div>
 
-      <div class="alternador-tema-container">
-        <label class="alternador-tema" for="botao-tema">
-          <input type="checkbox" id="botao-tema" />
-          <span class="deslizador"></span>
-        </label>
-      </div>
+    <nav id="navbar" class="fixed w-full z-50 glass transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <span class="text-xl font-bold tracking-tight text-primary" data-aos="fade-down">GV.</span>
+                
+                <div class="hidden md:flex space-x-8 text-sm font-medium" data-aos="fade-down" data-aos-delay="100">
+                    <a href="#home" class="hover:text-primary transition relative group">Início</a>
+                    <a href="#about" class="hover:text-primary transition relative group">Sobre</a>
+                    <a href="#projects" class="hover:text-primary transition relative group">Projetos</a>
+                    <a href="#resume" class="hover:text-primary transition relative group">Currículo</a>
+                    <a href="#contact" class="hover:text-primary transition relative group">Contato</a>
+                </div>
 
-      <nav>
-        <ul id="lista-tecnologias" style="list-style: none">
-          <li id="vscode" class="nav">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg"
-              alt="Visual Studio Code"
-            />
-          </li>
-          <li id="html5" class="nav">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg"
-              alt="HTML5"
-            />
-          </li>
-          <li id="css" class="nav">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"
-              alt="CSS"
-            />
-          </li>
-          <li id="git" class="nav">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg"
-              alt="Git"
-            />
-          </li>
-          <li id="java" class="nav">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-plain.svg"
-              alt="Java"
-            />
-          </li>
-          <li id="intellij" class="nav">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-plain.svg"
-              alt="IntelliJ IDEA"
-            />
-          </li>
-          <li id="cpp" class="nav">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-plain.svg"
-              alt="C++"
-            />
-          </li>
-          <li id="python" class="nav">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-plain.svg"
-              alt="Python"
-            />
-          </li>
-          <li id="pandas" class="nav">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg"
-              alt="Pandas"
-            />
-          </li>
-          <li id="linux" class="nav">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-plain.svg"
-              alt="Linux"
-            />
-          </li>
-          <li id="spring" class="nav">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg"
-              alt="Spring Framework"
-            />
-          </li>
-        </ul>
-      </nav>
-    </header>
+                <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition" data-aos="fade-down" data-aos-delay="200">
+                    <i class="fas fa-moon dark:hidden"></i>
+                    <i class="fas fa-sun hidden dark:block text-yellow-400"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
 
-    <h1 id="titulo-projetos">Meus projetos</h1>
-    <main>
-      <section class="projetos">
-        <div class="cartao-projeto">
-          <div class="sobreposicao">
-            <a
-              target="_blank"
-              href="https://github.com/GabrielVioli/BookManager"
-            >
-              <img
-                id="livro"
-                src="https://cdn-icons-png.flaticon.com/512/29/29202.png"
-                alt="Projeto Biblioteca Virtual C++"
-              />
-            </a>
-          </div>
-          <div class="info-projeto">
-            <h3 class="titulo-projeto">Biblioteca virtual em C++</h3>
-            <p class="descricao-projeto">
-              Um sistema para cadastro e gerenciamento de livros feito em C++.
+    <section id="home" class="min-h-screen flex items-center justify-center pt-16 relative z-10">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <div class="mb-8 relative inline-block" data-aos="zoom-in">
+                <img src="images/82556581.jpeg" alt="Gabriel Vinicius" class="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-primary object-cover shadow-2xl mx-auto hover:scale-105 transition duration-500">
+                <div class="absolute bottom-2 right-2 w-4 h-4 bg-green-500 rounded-full border-2 border-white dark:border-dark animate-pulse"></div>
+            </div>
+            
+            <h2 class="text-xl md:text-2xl font-light mb-2 text-gray-500 dark:text-gray-400" data-aos="fade-up" data-aos-delay="100">Olá, eu sou</h2>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-600" data-aos="fade-up" data-aos-delay="200">
+                Gabriel Vinicius
+            </h1>
+            
+            <div class="h-8 md:h-10 mb-8 font-mono text-lg md:text-xl text-gray-600 dark:text-gray-300" data-aos="fade-up" data-aos-delay="300">
+                <span id="typewriter" class="text-primary font-bold cursor-blink"></span>
+            </div>
+            
+            <p class="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed" data-aos="fade-up" data-aos-delay="400">
+                Estudante de Engenharia de Software e Desenvolvedor Backend focado em 
+                <span class="font-semibold text-primary">PHP, Laravel e Arquitetura de Software</span>. 
+                Transformo lógica complexa em sistemas eficientes.
             </p>
-          </div>
-        </div>
+            
+            <div class="flex flex-wrap justify-center gap-4" data-aos="fade-up" data-aos-delay="500">
+                <a href="#projects" class="px-8 py-3 bg-primary hover:bg-secondary text-white rounded-full font-medium transition shadow-lg shadow-primary/30 transform hover:-translate-y-1">
+                    Ver Projetos
+                </a>
+                <a href="#contact" class="px-8 py-3 border border-gray-300 dark:border-gray-600 hover:border-primary dark:hover:border-primary rounded-full font-medium transition transform hover:-translate-y-1">
+                    Fale Comigo
+                </a>
+            </div>
 
-        <div class="cartao-projeto">
-          <div class="sobreposicao">
-            <a
-              target="_blank"
-              href="https://github.com/GabrielVioli/CppBuildMaster"
-            >
-              <img
-                id="engrenagem"
-                src="https://cdn-icons-png.flaticon.com/512/2972/2972185.png"
-                alt="Projeto Automação de Make com VSCode"
-              />
-            </a>
-          </div>
-          <div class="info-projeto">
-            <h3 class="titulo-projeto">Automação de Make no VSCode</h3>
-            <p class="descricao-projeto">
-              Script para automatizar compilações e facilitar o workflow no
-              editor VSCode.
+            <div class="mt-16 flex flex-wrap justify-center gap-6 opacity-70 grayscale hover:grayscale-0 transition-all duration-500" data-aos="fade-in" data-aos-delay="600">
+                <i class="devicon-php-plain text-4xl hover:text-blue-500 transition hover:scale-110"></i>
+                <i class="devicon-laravel-original text-4xl hover:text-red-500 transition hover:scale-110"></i>
+                <i class="devicon-mysql-original text-4xl hover:text-orange-500 transition hover:scale-110"></i>
+                <i class="devicon-docker-plain text-4xl hover:text-blue-400 transition hover:scale-110"></i>
+                <i class="devicon-git-plain text-4xl hover:text-red-400 transition hover:scale-110"></i>
+                <i class="devicon-linux-plain text-4xl hover:text-yellow-100 transition hover:scale-110"></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 z-10 relative bg-gray-50/50 dark:bg-slate-900/50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center" data-aos="fade-up"><span class="text-primary">.</span>Sobre Mim</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6" data-aos="fade-right">
+                    <p class="text-lg leading-relaxed text-gray-600 dark:text-gray-300">
+                        Atualmente cursando o 3º período de ADS na UniGuairacá e com base em Engenharia de Software. Tenho experiência prática na construção de APIs RESTful robustas e manipulação direta de banco de dados.
+                    </p>
+                    <p class="text-lg leading-relaxed text-gray-600 dark:text-gray-300">
+                        Meu foco não é apenas "fazer funcionar", mas entender o ciclo de vida da requisição, aplicar Design Patterns (MVC, Repository, Singleton) e garantir a segurança e performance do código.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-4 mt-8">
+                        <div class="p-4 bg-white dark:bg-slate-800 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700 hover:border-primary transition group">
+                            <h3 class="font-bold text-primary mb-1 group-hover:translate-x-1 transition">Backend</h3>
+                            <p class="text-sm text-gray-500">PHP 8.2+, Laravel, Java Spring</p>
+                        </div>
+                        <div class="p-4 bg-white dark:bg-slate-800 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700 hover:border-primary transition group">
+                            <h3 class="font-bold text-primary mb-1 group-hover:translate-x-1 transition">Dados</h3>
+                            <p class="text-sm text-gray-500">MySQL, Modelagem MER, SQL</p>
+                        </div>
+                        <div class="p-4 bg-white dark:bg-slate-800 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700 hover:border-primary transition group">
+                            <h3 class="font-bold text-primary mb-1 group-hover:translate-x-1 transition">DevOps</h3>
+                            <p class="text-sm text-gray-500">Git, Linux, Docker, Composer</p>
+                        </div>
+                        <div class="p-4 bg-white dark:bg-slate-800 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700 hover:border-primary transition group">
+                            <h3 class="font-bold text-primary mb-1 group-hover:translate-x-1 transition">Conceitos</h3>
+                            <p class="text-sm text-gray-500">MVC, POO, REST, Clean Code</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-slate-800 rounded-xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition duration-500" data-aos="fade-left">
+                    <div class="bg-slate-900 px-4 py-2 flex gap-2">
+                        <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                    </div>
+                    <div class="p-6 font-mono text-sm">
+                        <p class="text-green-400">$ whoami</p>
+                        <p class="text-white mb-4">Gabriel Vinicius</p>
+                        
+                        <p class="text-green-400">$ current_location</p>
+                        <p class="text-white mb-4">Guarapuava, PR</p>
+
+                        <p class="text-green-400">$ main_stack</p>
+                        <p class="text-yellow-300">[ "PHP 8", "Laravel", "MySQL" ]</p>
+                        
+                        <p class="text-green-400 mt-4">$ <span class="animate-pulse">_</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 z-10 relative">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-4 text-center" data-aos="fade-up"><span class="text-primary">.</span>Projetos Recentes</h2>
+            <p class="text-center text-gray-500 mb-12" data-aos="fade-up" data-aos-delay="100">
+                Clique em "Ver Mídia" para ver fotos e vídeos dos sistemas.<br>
+                <span class="text-xs text-primary bg-primary/10 px-2 py-1 rounded-full mt-2 inline-block">Dica: Passe o mouse para efeito 3D</span>
             </p>
-          </div>
+            
+            <div id="projects-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                </div>
         </div>
+    </section>
 
-        <div class="cartao-projeto">
-          <div class="sobreposicao">
-            <a target="_blank" href="https://github.com/GabrielVioli/OpenCv-C-">
-              <img
-                id="visao"
-                src="https://cdn-icons-png.flaticon.com/512/2922/2922506.png"
-                alt="Projeto OpenCV"
-              />
-            </a>
-          </div>
-          <div class="info-projeto">
-            <h3 class="titulo-projeto">Visão computacional com OpenCV</h3>
-            <p class="descricao-projeto">
-              Projeto de análise e comparação de imagens usando C++ e OpenCV.
-            </p>
-          </div>
+    <section id="resume" class="py-20 bg-gray-50/50 dark:bg-slate-900/50 z-10 relative">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center" data-aos="fade-up"><span class="text-primary">.</span>Trajetória</h2>
+            
+            <div class="relative border-l-2 border-gray-200 dark:border-gray-700 ml-3 md:ml-6 space-y-12">
+                
+                <div class="relative pl-8 md:pl-12 group" data-aos="fade-left">
+                    <span class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary ring-4 ring-white dark:ring-dark transition group-hover:scale-125"></span>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">Análise e Desenvolvimento de Sistemas</h3>
+                    <span class="block text-sm text-primary font-semibold mb-2">UniGuairacá | Jul 2025 - Jul 2027</span>
+                    <p class="text-gray-600 dark:text-gray-400">Foco em Estrutura de Dados, Banco de Dados Relacional e Engenharia de Software.</p>
+                </div>
+
+                <div class="relative pl-8 md:pl-12 group" data-aos="fade-left" data-aos-delay="100">
+                    <span class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-gray-400 ring-4 ring-white dark:ring-dark transition group-hover:bg-primary group-hover:scale-125"></span>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">Recuperador de Crédito</h3>
+                    <span class="block text-sm text-gray-500 mb-2">Bettega Digital | Out 2024 – Ago 2025</span>
+                    <p class="text-gray-600 dark:text-gray-400">Atuação com foco em metas, análise de dados cadastrais e negociação estratégica.</p>
+                </div>
+
+                 <div class="relative pl-8 md:pl-12 group" data-aos="fade-left" data-aos-delay="200">
+                    <span class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-gray-400 ring-4 ring-white dark:ring-dark transition group-hover:bg-primary group-hover:scale-125"></span>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">Técnico em Eletromecânica</h3>
+                    <span class="block text-sm text-gray-500 mb-2">C.E. Francisco Carneiro Martins | Concluído 2023</span>
+                    <p class="text-gray-600 dark:text-gray-400">Base sólida em lógica booleana, automação e diagnóstico de falhas em sistemas complexos.</p>
+                </div>
+
+            </div>
+            
+            <div class="text-center mt-12" data-aos="zoom-in">
+                <a href="images/curriculo_Gabriel_dev.pdf" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 bg-slate-800 dark:bg-slate-700 text-white rounded-lg hover:bg-primary hover:-translate-y-1 transition duration-300 shadow-lg">
+                    <i class="fas fa-file-pdf"></i> Baixar CV Completo
+                </a>
+            </div>
         </div>
+    </section>
 
-        <div class="cartao-projeto">
-          <div class="sobreposicao">
-            <a
-              target="_blank"
-              href="https://github.com/GabrielVioli/ClientTasks"
-            >
-              <img
-                id="entrar"
-                src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png"
-                alt="Projeto Login Spring Boot"
-              />
-            </a>
-          </div>
-          <div class="info-projeto">
-            <h3 class="titulo-projeto">Tela de Login com Spring Boot</h3>
-            <p class="descricao-projeto">
-              Projeto de autenticação de usuários utilizando Spring Boot, MySQL,
-              JS, CSS e HTML, integrado via ngrok para acesso remoto.
-            </p>
-          </div>
+    <section id="contact" class="py-20 z-10 relative">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-4 text-center" data-aos="fade-up"><span class="text-primary">.</span>Vamos Conversar?</h2>
+            <p class="text-center text-gray-500 mb-12">Estou disponível para projetos freelance e oportunidades de estágio.</p>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="space-y-8" data-aos="fade-right">
+                    <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-slate-800 transition">
+                        <div class="p-3 bg-primary/10 text-primary rounded-lg">
+                            <i class="fab fa-whatsapp text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold">WhatsApp</h3>
+                            <a href="https://wa.me/5542988667187" target="_blank" class="text-gray-600 dark:text-gray-400 hover:text-primary">(42) 9 8866-7187</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-slate-800 transition">
+                        <div class="p-3 bg-primary/10 text-primary rounded-lg">
+                            <i class="far fa-envelope text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold">Email</h3>
+                            <a href="mailto:gabrielgvo16@gmail.com" class="text-gray-600 dark:text-gray-400 hover:text-primary">gabrielgvo16@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-slate-800 transition">
+                        <div class="p-3 bg-primary/10 text-primary rounded-lg">
+                            <i class="fab fa-linkedin text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold">LinkedIn</h3>
+                            <a href="https://linkedin.com/in/gabrielvioli" target="_blank" class="text-gray-600 dark:text-gray-400 hover:text-primary">/in/gabrielvioli</a>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="https://formsubmit.co/9e491e68ab40e7b9faac14e46dc0c571" method="POST" class="space-y-4 bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-xl border border-gray-100 dark:border-gray-700" data-aos="fade-left">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://gabrielvioli.github.io/Portf-lio/">
+                    
+                    <input type="text" name="name" placeholder="Nome" required class="w-full px-4 py-3 rounded-lg bg-gray-50 dark:bg-slate-900 border border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition">
+                    <input type="email" name="email" placeholder="Email" required class="w-full px-4 py-3 rounded-lg bg-gray-50 dark:bg-slate-900 border border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition">
+                    <textarea name="message" rows="4" placeholder="Sua Mensagem..." required class="w-full px-4 py-3 rounded-lg bg-gray-50 dark:bg-slate-900 border border-gray-200 dark:border-gray-700 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition"></textarea>
+                    
+                    <button type="submit" class="w-full py-3 bg-primary hover:bg-secondary text-white font-bold rounded-lg transition transform hover:scale-[1.02] shadow-lg">
+                        Enviar Mensagem
+                    </button>
+                </form>
+            </div>
         </div>
+    </section>
 
+    <footer class="bg-white dark:bg-dark border-t border-gray-200 dark:border-gray-800 py-8 text-center z-10 relative">
+        <p class="text-gray-500">© 2025 Gabriel Vinicius. Todos os direitos reservados.</p>
+        <div class="mt-4 flex justify-center gap-6">
+            <a href="https://github.com/GabrielVioli" target="_blank" class="text-2xl text-gray-400 hover:text-primary transition hover:-translate-y-1"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/gabrielvioli" target="_blank" class="text-2xl text-gray-400 hover:text-primary transition hover:-translate-y-1"><i class="fab fa-linkedin"></i></a>
         </div>
-
-        <div class="cartao-projeto">
-          <div class="sobreposicao">
-            <a
-              target="_blank"
-              rel="noopener"
-              href="https://github.com/GabrielVioli/php-oop-mvc-login"
-            >
-              <img
-                id="php-login"
-                src="https://cdn-icons-png.flaticon.com/512/1040/1040918.png"
-                alt="Projeto PHP POO Login"
-              />
-            </a>
-          </div>
-          <div class="info-projeto">
-            <h3 class="titulo-projeto">Registro de Usuário (PHP POO)</h3>
-            <p class="descricao-projeto">
-              Um projeto de estudo focado em construir uma aplicação de registro
-              de usuário em PHP, seguindo uma arquitetura moderna orientada a
-              objetos (POO).
-            </p>
-          </div>
-        </div>
-        </section>
-    </main>
-      </section>
-    </main>
-
-    <footer>
-      <h2 class="titulo-contato">Entre em contato comigo!</h2>
-      <ol class="contatos">
-        <li>
-          <a href="https://wa.me/5542988667187" target="_blank" rel="noopener"
-            ><img id="whatsapp" src="icons/whatsapp.png" alt="Whatsapp"
-          /></a>
-        </li>
-        <li>
-          <a href="https://br.linkedin.com/in/gabrielvioli" target="_blank"
-            ><img id="linkedin" src="icons/linkedin.png" alt="Linkedin"
-          /></a>
-        </li>
-        <li>
-          <a href="https://github.com/GabrielVioli" target="_blank"
-            ><img id="github" src="icons/github.png" alt="Github"
-          /></a>
-        </li>
-      </ol>
-
-      <form
-        id="formulario"
-        action="https://formsubmit.co/9e491e68ab40e7b9faac14e46dc0c571"
-        method="POST"
-      >
-        <input type="hidden" name="_captcha" value="false" />
-        <input
-          type="hidden"
-          name="_next"
-          value="https://gabrielvioli.github.io/Portf-lio/"
-        />
-        <label id="titulo-nome">Nome</label><br />
-        <input
-          type="text"
-          id="nome-usuario"
-          name="name"
-          placeholder="Seu nome"
-          required
-        /><br /><br />
-
-        <label id="titulo-email">Email</label><br />
-        <input
-          type="email"
-          id="email-usuario"
-          name="email"
-          placeholder="Seu email"
-          required
-        /><br /><br />
-
-        <label id="titulo-mensagem">Mensagem</label><br />
-        <textarea
-          id="mensagem"
-          name="message"
-          placeholder="Digite sua mensagem"
-          rows="5"
-          required
-        ></textarea
-        ><br /><br />
-
-        <button type="submit" id="botao-enviar">Enviar</button>
-      </form>
-
-      <p
-        id="mensagemSucesso"
-        style="
-          display: none;
-          color: rgb(84, 161, 84);
-          margin-top: 15px;
-          font-weight: bold;
-        "
-      >
-        Mensagem enviada com sucesso!
-      </p>
-
-      <p>© 2025 Gabriel Vinicius. <br>
-        Todos os direitos reservados.</p>
     </footer>
+
+    <div id="media-modal" class="fixed inset-0 z-[100] hidden bg-black/90 backdrop-blur-sm flex items-center justify-center p-4 opacity-0 transition-opacity duration-300">
+        <div class="bg-white dark:bg-slate-800 rounded-2xl w-full max-w-4xl max-h-[90vh] flex flex-col relative transform scale-95 transition-transform duration-300" id="modal-panel">
+            <div class="p-4 border-b border-gray-200 dark:border-gray-700 flex justify-between items-center bg-white dark:bg-slate-800 rounded-t-2xl z-20">
+                <h3 id="modal-title" class="text-lg font-bold">Projeto</h3>
+                <button onclick="closeModal()" class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 dark:bg-slate-700 text-gray-500 hover:bg-red-500 hover:text-white transition">&times;</button>
+            </div>
+            <div class="flex-1 overflow-y-auto p-6 bg-gray-100 dark:bg-slate-900 text-center">
+                <div id="modal-content" class="space-y-6"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
