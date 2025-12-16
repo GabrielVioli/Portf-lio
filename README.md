@@ -1,6 +1,6 @@
 # Gabriel Vinicius - Portfólio Profissional
 
-![Portfolio Banner](images/image.png) Portfólio pessoal desenvolvido com foco em **Engenharia de Software** e **Desenvolvimento Backend**. O projeto foi totalmente refatorado para oferecer uma experiência moderna, minimalista e de alta performance, utilizando **Tailwind CSS** e **JavaScript Moderno**.
+![Portfolio Banner](docs/images/image.png) Portfólio pessoal desenvolvido com foco em **Engenharia de Software** e **Desenvolvimento Backend**. O projeto foi totalmente refatorado para oferecer uma experiência moderna, minimalista e de alta performance, utilizando **Tailwind CSS** e **JavaScript Moderno**.
 
  **Acesse o portfólio online:** [https://gabrielvioli.github.io/Portf-lio/](https://gabrielvioli.github.io/Portf-lio/)
 
